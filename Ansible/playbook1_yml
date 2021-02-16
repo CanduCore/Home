@@ -1,0 +1,17 @@
+---
+- name: My First playbook
+  hosts: webservers
+  become: true
+  tasks:
+
+  - name: Install Apache Webserver
+    apt:
+      name: apache2
+      state: present
+
+
+
+
+
+
+
