@@ -43,7 +43,7 @@ The configuration details of each machine may be found below.
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the whitelisted machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses: OFFICE IP
+Only the whitelisted machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses: 184.146.66.184
 
 Machines within the network can only be accessed by SSH.
 IP address: OFFICE IP
@@ -52,11 +52,13 @@ A summary of the access policies in place can be found in the table below.
 
 | Name          | Publicly Accessible | Allowed IP Addresses |
 |---------------|---------------------|----------------------|
-| Jump Box      | Yes                 | OFFICE IP            |
+| Jump Box      | Yes                 | 184.146.66.184       |
 | Web-1         | No                  | Internal Network SSH |
 | Web-2         | No                  | Internal Network SSH |
-| ELK           | Yes                 | INTERNAL IP          |
-| Load Balancer | Yes                 | INTERNAL IP          |
+| ELK           | Yes                 | Public service IP    |
+| Load Balancer | Yes                 | Public service IP    |
+
+Note that your configured administration (Jump Box) and Public service IP addresses are variable to your environment.
 
 ### Elk Configuration
 
