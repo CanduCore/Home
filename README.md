@@ -7,7 +7,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yml file may be used to install only certain pieces of it, such as Filebeat.
 
-  [Filebeat Configuration File ](Ansible/filebeat-playbook.yml).
+  [Filebeat Configuration File ](/Ansible/firebeat-playbook_yml).
 
 This document contains the following details:
 - Description of the Topology
@@ -80,19 +80,14 @@ The following screenshot displays the result of running `docker ps` after succes
 This ELK server is configured to monitor the following machines:
 
 Web-1:10.0.0.5
-
 Web-2:10.0.0.6
 
-We have installed the following Beats on these machines:
+Filebeat is installed on the following machines:
+Web-1:10.0.0.5 (Web server A)
+Web-2:10.0.0.6 (Web server B)
 
-Web-1:10.0.0.5
-
-Web-2:10.0.0.6
-
-These Beats allow us to collect the following information from each machine:
-
-- **Filebeat** collects data about the file system.
-
+This Beat allows us to collect the following information from each machine: 
+**Filebeat** collects data about the file system.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -102,7 +97,5 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include the target machine such as Webserver or ELK server
 - Run the playbook, and navigate to target machine to check that the installation worked as expected.
 
-
-- _Which URL do you navigate to in order to check that the ELK server is running?
-
+To confirm functionality, navigate to the ELK URL shown below, substituting "ELK_PUBLIC_IP" for your pre-configured target IP. The service is available on port 5601.
 URL: http://ELK_Public_IP:5601
