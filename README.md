@@ -62,7 +62,7 @@ Note that your configured administration (Jump Box) and Public service IP addres
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous due to the ease of scalability and maintainability.
 
 Consistent development experience for you and your team
 Decouples the Ansible environment from the target environment
