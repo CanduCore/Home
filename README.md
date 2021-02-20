@@ -100,4 +100,5 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to target machine to check that the installation worked as expected.
 
 To confirm functionality, navigate to the ELK URL shown below, substituting "ELK_PUBLIC_IP" for your pre-configured target IP. The service is available on port 5601.
+
 URL: http://ELK_Public_IP:5601
